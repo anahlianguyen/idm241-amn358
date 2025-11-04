@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+
+:root {
+  --green: #1ed760;
+  --bg-top: #4a3b6a;
+  --bg-bottom: #2a1e3b;
+}
+
+body {
+  margin: 0;
+  padding: 24px;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
+  color: white;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  color: var(--green);
+  font-size: clamp(1.6rem, 3vw + 1rem, 2.6rem);
+  font-weight: 800;
+  margin: 0;
+}
+
+.container {
+  width: min(92vw, 900px);
+  margin: 0 auto 40px;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  padding: 24px;
+}
+
+.album-container {
+  display: flex;
+  justify-content: center;
+}
+
+.album-page {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.album-cover img {
+  width: 280px;
+  height: 280px;
+  border-radius: 12px;
+  object-fit: cover;
+  transition: filter 0.3s ease;
+}
+
+.album-info {
+  max-width: 500px;
+}
+
+.album-label {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #c8b6e2;
+  margin-bottom: 10px;
+}
+
+.album-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.album-title span {
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.artist {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  color: #d6cde8;
+}
+
+.artist-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.album-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.play-btn {
+  background-color: var(--green);
+  color: black;
+  font-size: 24px;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.play-btn:hover {
+  box-shadow: 0 0 25px var(--green);
+  transform: scale(1.05);
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.icon-btn img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.2s ease, filter 0.3s ease, opacity 0.4s ease-in-out;
+}
+
+.icon-btn:hover img {
+  transform: scale(1.1);
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px;
+}
+
+.cat-container {
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  transition: transform 0.25s ease, box-shadow 0.3s ease;
+}
+
+.cat-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.6);
+}
+
+
+h4 {
+  color: var(--green);
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+h5 {
+  font-weight: 600;
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 12px;
+  padding-left: 20px;
+  line-height: 1.5;
+}
+
+li {
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+
+@media (max-width: 768px) {
+  .album-page {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .album-cover img {
+    width: 80vw;
+    height: auto;
+  }
+
+  .album-info {
+    max-width: 100%;
+  }
+
+  .description {
+    padding: 16px;
+  }
+
+}
+
+.save-pulse {
+  animation: savePulse 0.4s ease-out;
+}
+@keyframes savePulse {
+  0% { transform: scale(1); filter: brightness(1); }
+  50% { transform: scale(1.25); filter: brightness(1.35); }
+  100% { transform: scale(1); filter: brightness(1); }
+}
+
+
+.downloading {
+  animation: downloadPulse 1s ease-in-out infinite;
+}
+@keyframes downloadPulse {
+  0% { filter: brightness(0.9); }
+  50% { filter: brightness(1.35); }
+  100% { filter: brightness(1); }
+}
+

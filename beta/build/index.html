@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beta Build - Anahlia Nguyen</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <h1>Beta Build - Anahlia Nguyen</h1>
+  </header>
+
+  <!-- main album page container-->
+  <div class="container album-container">
+    <div class="album-page">
+      <div class="album-cover">
+        <img src="images/guts-album.png" alt="GUTS (spilled) album cover">
+      </div>
+
+      <div class="album-info">
+        <p class="album-label">Album</p>
+        <h1 class="album-title">GUTS <span>(spilled)</span></h1>
+        <p class="artist">
+          <img src="images/olivia-pfp.jpeg" alt="Olivia Rodrigo" class="artist-img">
+          <strong>Olivia Rodrigo</strong> • 2024 • 17 songs, 54 min 36 sec
+        </p>
+
+        <div class="album-actions">
+          <button class="play-btn">▶</button>
+          <button class="icon-btn" id="shuffleButton">
+            <img src="images/shuffle-default-icon.png" alt="Shuffle" id="shuffleIcon">
+          </button>
+          <button class="icon-btn" id="saveButton">
+            <img src="images/save-default-icon.png" alt="Save" id="saveIcon">
+          </button>
+          <button class="icon-btn" id="downloadButton">
+            <img src="images/download-default-icon.png" alt="Download" id="downloadIcon">
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ALL triggers, rules, feedback, & rules and modes -->
+  <div class="container description">
+    <!--album cover -->
+    <div class="cat-container">
+      <h4>Triggers</h4>
+      <h5><i>Artist Album Button</i></h5>
+      <ul>
+        <li>Hover On</li>
+        <li>Hover Off</li>
+      </ul>
+    </div>
+
+    <div class="cat-container">
+      <h4>Rules</h4>
+      <h5><i>Artist Album Button</i></h5>
+      <ul>
+        <li>Hover On</li>
+        <ul>
+          <li>Cursor Change: The cursor changes from a pointer to a hand, indicating interactivity.</li>
+          <li>Audio Activation: The album snippet begins to play immediately from the start.</li>
+          <li>Visual Glow: A soft purple glow radiates around the album image, highlighting it.</li>
+        </ul>
+      </ul>
+      <ul>
+        <li>Hover Off</li>
+        <ul>
+          <li>Cursor Change: The cursor changes back from a hand to a pointer.</li>
+          <li>Audio Fade & Stop: The snippet fades out quickly and stops completely.</li>
+          <li>Glow Reset: The purple glow softly fades away, returning the album image to normal.</li>
+        </ul>
+      </ul>
+    </div>
+
+    <div class="cat-container">
+      <h4>Feedback</h4>
+      <h5><i>Artist Album Button</i></h5>
+      <ul>
+        <li>Hover On</li>
+        <ul>
+          <li>Cursor Change: The cursor changes from a pointer to a hand, indicating interactivity.</li>
+          <li>Audio Activation: The album snippet begins to play immediately from the start.</li>
+          <li>Visual Glow: A soft purple glow radiates around the album image, highlighting it.</li>
+        </ul>
+      </ul>
+      <ul>
+        <li>Hover Off</li>
+        <ul>
+          <li>Cursor Change: The cursor changes back from a hand to a pointer.</li>
+          <li>Audio Fade & Stop: The snippet fades out quickly and stops completely.</li>
+          <li>Glow Reset: The purple glow softly fades away, returning the album image to normal.</li>
+        </ul>
+      </ul>
+    </div>
+
+    <div class="cat-container">
+      <h4>Loops & Mode</h4>
+      <h5><i>Artist Album Button</i></h5>
+      <ul>
+        <li>Loops
+          <ul>
+            <li>Each hover triggers playback from the start; the snippet restarts every time.</li>
+          </ul>
+        </li>
+        <li>Mode
+          <ul>
+            <li>N/A</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!--play button -->
+    <div class="cat-container">
+      <h4>Triggers</h4>
+      <h5><i>Play Button</i></h5>
+      <ul>
+        <li>Hover On</li>
+        <li>Hover Off</li>
+      </ul>
+    </div>
+
+    <div class="cat-container">
+      <h4>Rules</h4>
+      <h5><i>Play Button</i></h5>
+      <ul>
+        <li>Hover On</li>
+        <ul>
+          <li>Cursor Change: The cursor changes from a pointer to a hand, showing it can be interacted with.</li>
+          <li>Glow Activation: The Play button emits a soft green glow (#1ed760).</li>
+          <li>Scale-Up Effect: The button slightly enlarges (scales up) from its center.</li>
+        </ul>
+      </ul>
+      <ul>
+        <li>Hover Off</li>
+        <ul>
+          <li>Cursor Change: The cursor changes back from a hand to a pointer.</li>
+          <li>Glow Reset: The green glow fades out smoothly.</li>
+          <li>Scale Reset: The button returns to its original size.</li>
+        </ul>
+      </ul>
+    </div>
+
+    <div class="cat-container">
+      <h4>Feedback</h4>
+      <h5><i>Play Button</i></h5>
+     <ul>
+        <li>Hover On</li>
+        <ul>
+          <li>Cursor Change: The cursor changes from a pointer to a hand, showing it can be interacted with.</li>
+          <li>Glow Activation: The Play button emits a soft green glow (#1ed760).</li>
+          <li>Scale-Up Effect: The button slightly enlarges (scales up) from its center.</li>
+        </ul>
+      </ul>
+      <ul>
+        <li>Hover Off</li>
+        <ul>
+          <li>Cursor Change: The cursor changes back from a hand to a pointer.</li>
+          <li>Glow Reset: The green glow fades out smoothly.</li>
+          <li>Scale Reset: The button returns to its original size.</li>
+        </ul>
+      </ul>
+    </div>
+
+    <div class="cat-container">
+      <h4>Loops & Mode</h4>
+      <h5><i>Play Button</i></h5>
+      <ul>
+        <li>Loops
+          <ul>
+            <li>The hover animation can repeat infinitely each time the cursor enters or leaves.</li>
+          </ul>
+        </li>
+        <li>Mode
+          <ul>
+            <li>N/A (Purely visual interaction; no persistent state).</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!--download icon -->
+    <div class="cat-container">
+      <h4>Triggers</h4>
+      <h5><i>Download Icon</i></h5>
+      <ul>
+        <li>Click On</li>
+        <li>Click Off</li>
+      </ul>
+    </div>
+
+    <div class="cat-container">
+      <h4>Rules</h4>
+      <h5><i>Download Icon</i></h5>
+      <ul>
+        <li>Click On</li>
+        <ul>
+          <li>Color Change: The icon changes from gray to green (#1ed760).</li>
+          <li>Pulse Animation: The icon emits a soft pulsing glow for three seconds to simulate downloading.</li>
+          <li>Lock State: During the pulse animation, additional clicks are disabled.</li>
+        </ul>
+      </ul>
+      <ul>
+        <li>Click Off</li>
+        <ul>
+          <li>Color Reset: The icon returns to gray.</li>
+          <li>Pulse Stop: The pulse animation stops immediately.</li>
+          <li>Interaction Reset: The button can now be clicked again.</li>
+        </ul>
+      </ul>
+    </div>
+
+    <div class="cat-container">
+      <h4>Feedback</h4>
+      <h5><i>Download Icon</i></h5>
+      <ul>
+        <li>Click On</li>
+        <ul>
+          <li>Color Change: The icon changes from gray to green (#1ed760).</li>
+          <li>Pulse Animation: The icon emits a soft pulsing glow for three seconds to simulate downloading.</li>
+          <li>Lock State: During the pulse animation, additional clicks are disabled.</li>
+          <li>Backend: In practice, would download the album to the Spotify profile.</li>
+        </ul>
+      </ul>
+      <ul>
+        <li>Click Off</li>
+        <ul>
+          <li>Color Reset: The icon returns to gray.</li>
+          <li>Pulse Stop: The pulse animation stops immediately.</li>
+          <li>Interaction Reset: The button can now be clicked again.</li>
+          <li>Backend: In practice, would remove download of the album from the Spotify profile.</li>
+        </ul>
+      </ul>
+    </div>
+
+    <div class="cat-container">
+      <h4>Loops & Mode</h4>
+      <h5><i>Download Icon</i></h5>
+      <ul>
+        <li>Loops
+          <ul>
+            <li>The pulse animation temporarily loops for three seconds when activated.</li>
+          </ul>
+        </li>
+        <li>Mode
+          <ul>
+            <li>Default Mode: Gray static icon (inactive).</li>
+            <li>Active Mode: Green glowing icon (download complete).</li>
+            <li>Locked Mode: While pulsing, the button cannot be clicked.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
