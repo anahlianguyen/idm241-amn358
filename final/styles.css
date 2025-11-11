@@ -1,0 +1,99 @@
+.calistoga-regular {
+  font-family: "Calistoga", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a:link {
+  color:  #1DB954;
+}
+
+a:visited {
+  color:  #1DB954; /
+}
+
+a:hover {
+  color:  purple;
+}
+
+a:active {
+  color: black;
+}
+
+
+body {
+  background-color: #F5F4F1;
+  margin: 0;
+  padding: 16px;
+}
+
+h1, h2, h3, h4, h5, ul, li {
+  font-family: "Calistoga", serif;
+  margin: 0 0 12px;
+}
+
+h1 {
+  font-size: clamp(1.6rem, 3.5vw + 1rem, 2.6rem);
+  line-height: 1.2;
+}
+
+h4 {
+  color: #1DB954;
+}
+
+h3, h4 {
+  font-size: clamp(1rem, 1.2vw + 0.8rem, 1.25rem);
+}
+
+.container {
+  width: min(92vw, 400px);
+  margin: 0 auto 24px;
+}
+
+.cat-container {
+ background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+  transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease, border-color 180ms ease;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+@media (max-width: 360px) {
+  body { padding: 12px; }
+  h1 { font-size: 1.45rem; }
+  .container { width: 94vw; }
+}
+
+@media (min-width: 768px) {
+  body { padding: 24px; }
+  h1 { font-size: 2.2rem; }
+  .container { width: min(90vw, 600px); }
+}
+
+@media (min-width: 1024px) {
+  body { padding: 32px; }
+  h1 { font-size: 2.5rem; }
+  .container { width: min(80vw, 720px); }
+}
+
+
