@@ -15,7 +15,7 @@
   </div>
 
   <h3><a href="https://open.spotify.com/">Link to Spotify↗</a></h3>
-
+<hr>
   <!-- MICROINTERACTION 1: Artist Album Button -->
   <div class="container">
     <div class="cat-container">
@@ -86,7 +86,7 @@
       </ul>
     </div>
   </div>
-
+<hr>
   <!-- MICROINTERACTION 2: Play Button -->
   <div class="container">
     <div class="cat-container">
@@ -95,15 +95,7 @@
       <ul>
         <li>Hover On</li>
         <li>Hover Off</li>
-      </ul>
-    </div>
-
-   <div class="cat-container">
-      <h4>Triggers</h4>
-      <h5><i>Play Button</i></h5>
-      <ul>
-        <li>Click (Play)</li>
-        <li>Click (Pause)</li>
+        <li>Click</li>
       </ul>
     </div>
 
@@ -128,10 +120,66 @@
       </ul>
     </div>
 
+    <div class="cat-container">
+      <h4>Feedback</h4>
+      <h5><i>Play Button</i></h5>
+      <ul>
+        <li>Hover On
+          <ul>
+            <li>Cursor Change: The cursor changes from a pointer to a hand, showing it can be interacted with.</li>
+            <li>Glow Activation: The Play button emits a soft green glow (#1ed760).</li>
+            <li>Scale-Up Effect: The button slightly enlarges (scales up) from its center.</li>
+          </ul>
+        </li>
+        <li>Hover Off
+          <ul>
+            <li>Cursor Change: The cursor changes back from a hand to a pointer.</li>
+            <li>Glow Reset: The green glow fades out smoothly.</li>
+            <li>Scale Reset: The button returns to its original size.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+ 
+    <div class="cat-container">
+      <h4>Loops & Mode</h4>
+      <h5><i>Play Button</i></h5>
+      <ul>
+        <li>Loops
+          <ul>
+            <li>N/A</li>
+          </ul>
+        </li>
+        <li>Mode
+          <ul>
+            <li>N/A</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+
+  </div>
+  </div>
+<hr>
+  <!-- MICROINTERACTION 3: Pause Icon -->
+<div class="container">
+
+  <div class="cat-container">
+      <h4>Triggers</h4>
+      <h5><i>Pause Button</i></h5>
+      <ul>
+        <li>Hover On</li>
+        <li>Hover Off</li>
+        <li>Click</li>
+      </ul>
+    </div>
+
 
     <div class="cat-container">
       <h4>Rules</h4>
-      <h5><i>Play Button</i></h5>
+      <h5><i>Pause Button</i></h5>
       <ul>
         <li>On Play
           <ul>
@@ -151,31 +199,9 @@
       </ul>
     </div>
 
-
-    <div class="cat-container">
+        <div class="cat-container">
       <h4>Feedback</h4>
-      <h5><i>Play Button</i></h5>
-      <ul>
-        <li>Hover On
-          <ul>
-            <li>Cursor Change: The cursor changes from a pointer to a hand, showing it can be interacted with.</li>
-            <li>Glow Activation: The Play button emits a soft green glow (#1ed760).</li>
-            <li>Scale-Up Effect: The button slightly enlarges (scales up) from its center.</li>
-          </ul>
-        </li>
-        <li>Hover Off
-          <ul>
-            <li>Cursor Change: The cursor changes back from a hand to a pointer.</li>
-            <li>Glow Reset: The green glow fades out smoothly.</li>
-            <li>Scale Reset: The button returns to its original size.</li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-
-     <div class="cat-container">
-      <h4>Feedback</h4>
-      <h5><i>Play Button</i></h5>
+      <h5><i>Pause Button</i></h5>
      <ul>
         <li>On Play
           <ul>
@@ -197,25 +223,7 @@
 
     <div class="cat-container">
       <h4>Loops & Mode</h4>
-      <h5><i>Play Button</i></h5>
-      <ul>
-        <li>Loops
-          <ul>
-            <li>N/A</li>
-          </ul>
-        </li>
-        <li>Mode
-          <ul>
-            <li>N/A</li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-
-
-    <div class="cat-container">
-      <h4>Loops & Mode</h4>
-      <h5><i>Play Button</i></h5>
+      <h5><i>Pause Button</i></h5>
       <ul>
         <li>Loops
           <ul>
@@ -229,10 +237,11 @@
         </li>
       </ul>
     </div>
-  </div>
-  </div>
+    </div>
 
-  <!-- MICROINTERACTION 3: Download Icon -->
+<hr>
+</div>
+  <!-- MICROINTERACTION 4: Download Icon -->
   <div class="container">
     <div class="cat-container">
       <h4>Triggers</h4>
@@ -252,6 +261,7 @@
             <li>Color Change: The icon changes from gray to green (#1ed760).</li>
             <li>Pulse Animation: The icon emits a soft pulsing glow for three seconds to simulate downloading.</li>
             <li>Lock State: During the pulse animation, additional clicks are disabled.</li>
+            <li>Database update: Downloads songs to users Spotify profile.</li>
           </ul>
         </li>
         <li>Click Off
@@ -259,6 +269,7 @@
             <li>Color Reset: The icon returns to gray.</li>
             <li>Pulse Stop: The pulse animation stops immediately.</li>
             <li>Interaction Reset: The button can now be clicked again.</li>
+            <li>Database update: Removes downloaded songs to users Spotify profile.</li>
           </ul>
         </li>
       </ul>
@@ -273,7 +284,6 @@
             <li>Color Change: The icon changes from gray to green (#1ed760).</li>
             <li>Pulse Animation: The icon emits a soft pulsing glow for three seconds to simulate downloading.</li>
             <li>Lock State: During the pulse animation, additional clicks are disabled.</li>
-            <li>Backend: In practice, would download the album to the Spotify profile.</li>
           </ul>
         </li>
         <li>Click Off
@@ -281,7 +291,6 @@
             <li>Color Reset: The icon returns to gray.</li>
             <li>Pulse Stop: The pulse animation stops immediately.</li>
             <li>Interaction Reset: The button can now be clicked again.</li>
-            <li>Backend: In practice, would remove the download of the album from the Spotify profile.</li>
           </ul>
         </li>
       </ul>
@@ -306,8 +315,8 @@
       </ul>
     </div>
   </div>
-
-  <!-- MICROINTERACTION 4: Add to Library (Download Animation) -->
+<hr>
+  <!-- MICROINTERACTION 5: Add to Library (Download Animation) -->
   <div class="container">
     <div class="cat-container">
       <h4>Triggers</h4>
@@ -327,12 +336,14 @@
             <li>The album cover image briefly detaches and flies toward the “Add” icon (top-right).</li>
             <li>The plus icon scales up slightly as if catching the album.</li>
             <li>Once the album reaches the icon, it fades out and the plus turns into a green checkmark.</li>
+            <li>Database Update: Adds songs to user profile.</li>
           </ul>
         </li>
         <li>Click (On Remove)
           <ul>
             <li>The checkmark morphs back into a plus icon, returning to default state.</li>
             <li>A reverse “fly out” animation sends the album cover back to its original position.</li>
+            <li>Database Update: Removes songs from user profile.</li>
           </ul>
         </li>
       </ul>
@@ -347,14 +358,12 @@
             <li>The album cover image briefly detaches and flies toward the “Add” icon (top-right).</li>
             <li>The plus icon scales up slightly as if catching the album.</li>
             <li>Once the album reaches the icon, it fades out and the plus turns into a green checkmark.</li>
-            <li>Backend: Adds album to library.</li>
           </ul>
         </li>
         <li>Click (On Remove)
           <ul>
             <li>The checkmark morphs back into a plus icon, returning to default state.</li>
             <li>A reverse “fly out” animation sends the album cover back to its original position.</li>
-            <li>Backend: Removes album from library.</li>
           </ul>
         </li>
       </ul>
