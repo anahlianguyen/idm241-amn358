@@ -1,0 +1,134 @@
+
+:root {
+  --spotify-green: #1DB954;
+  --spotify-black: #121212;
+  --spotify-dark: #181818;
+  --spotify-card: #1E1E1E;
+  --spotify-light-text: #B3B3B3;
+}
+
+.calistoga-regular {
+  font-family: "Calistoga", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: var(--spotify-black);
+  color: #FFFFFF;
+  margin: 0;
+  padding: 24px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a:link,
+a:visited {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--spotify-green);
+}
+
+a:active {
+  color: #000000;
+}
+
+h1, h2, h3, h4, h5, ul, li {
+  font-family: "Calistoga", serif;
+  margin: 0 0 12px;
+}
+
+h1 {
+  font-size: clamp(1.8rem, 3.5vw + 1rem, 2.8rem);
+  line-height: 1.2;
+}
+
+h4 {
+  color: var(--spotify-green);
+}
+
+h3, h4 {
+  font-size: clamp(1rem, 1.2vw + 0.8rem, 1.25rem);
+}
+
+.container {
+  width: min(92vw, 480px);
+  margin: 0 auto;
+}
+
+.cat-container {
+  background: var(--spotify-dark);
+  border-radius: 16px;
+  padding: 1.5rem 1.75rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.header h1 {
+  font-size: 2.3rem;
+  margin: 0;
+}
+
+.cat-container p {
+  margin: 4px 0 20px;
+  font-size: 1rem;
+  color: var(--spotify-light-text);
+}
+
+.cat-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cat-container li {
+  margin-bottom: 10px;
+}
+
+.cat-container li a {
+  display: block;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  background-color: var(--spotify-card);
+  color: #FFFFFF;
+  font-size: 1.05rem;
+  transition: background-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+}
+
+.cat-container li a:hover {
+  background-color: var(--spotify-green);
+  color: #000000;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
+}
+
+
+@media (max-width: 360px) {
+  body { padding: 16px; }
+  h1 { font-size: 1.7rem; }
+  .container { width: 94vw; }
+}
+
+@media (min-width: 768px) {
+  body { padding: 32px; }
+  h1 { font-size: 2.4rem; }
+  .container { width: min(70vw, 560px); }
+}
+
+@media (min-width: 1024px) {
+  body { padding: 40px; }
+  h1 { font-size: 2.6rem; }
+  .container { width: min(50vw, 620px); }
+}
